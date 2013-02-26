@@ -33,7 +33,13 @@ def install_zsh():
 
 
 def bootstrap_vim():
-    pass
+    command = ['git', 'submodule', 'init']
+    print ' '.join(command)
+    check_call(command)
+    command = ['git', 'submodule', 'update']
+    print ' '.join(command)
+    check_call(command)
+    # TODO: install Command-T
 
 
 # run this before making symlinks
