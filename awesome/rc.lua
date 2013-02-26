@@ -125,7 +125,7 @@ end
 awful.util.spawn("xset r rate 250")
 awful.util.spawn("setxkbmap -layout 'us,ru,ua' -variant ',winkeys,winkeys' -option grp:caps_toggle -option grp_led:caps -option terminate:ctrl_alt_bksp")
 run_once("kbdd")
-run_once("dropbox start")
+awful.util.spawn("dropbox start")
 
 
 -- Keyboard map indicator and changer
