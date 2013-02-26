@@ -13,6 +13,8 @@ symlinks = [
     ('awesome', '.config/awesome'),
     ('gtkrc-2.0', '.gtkrc-2.0'),
     ('gtkrc.mine', '.gtkrc.mine'),
+
+    ('inputrc', '.inputrc'),
 ]
 symlinks = [
     (normpath(join(dot_base, tp)), normpath(join(home, sp)))
