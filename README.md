@@ -5,6 +5,12 @@ Installation
     $ cd ~/dot
     $ python bootstrap.py
 
+Also need to install:
+
+* Terminus font
+* Zukitwo GTK theme
+* Faenza GTK icon theme
+
 Adding new configs
 ==================
 
