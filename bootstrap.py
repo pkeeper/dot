@@ -17,6 +17,9 @@ symlinks = [
     ('zsh/zshrc', '.zshrc'),
     ('zsh/jetprose.zsh-theme', '.oh-my-zsh/themes/jetprose.zsh-theme'),
 
+    # virtualenv
+    ('.virtualenvs/postactivate', 'virtualenv/postactivate'),
+
     # awesome wm
     ('awesome', '.config/awesome'),
     ('gtkrc-2.0', '.gtkrc-2.0'),
