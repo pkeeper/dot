@@ -15,6 +15,7 @@ symlinks = [
     ('gtkrc.mine', '.gtkrc.mine'),
 
     ('inputrc', '.inputrc'),
+    ('gitconfig', '.gitconfig'),
 ]
 symlinks = [
     (normpath(join(dot_base, tp)), normpath(join(home, sp)))
