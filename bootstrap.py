@@ -9,6 +9,10 @@ dot_base = os.getcwd()
 
 # (target, symlink)
 symlinks = [
+    # vim
+    ('vim', '.vim'),
+    ('vimrc', '.vimrc'),
+
     # awesome wm
     ('awesome', '.config/awesome'),
     ('gtkrc-2.0', '.gtkrc-2.0'),
@@ -24,7 +28,23 @@ symlinks = [
 ]
 
 
+def install_zsh():
+    pass
+
+
+def bootstrap_vim():
+    pass
+
+
+# run this before making symlinks
+before = [install_zsh]
+# run this after making symlinks
+after = [bootstrap_vim]
+
+
 def bootstrap():
+    for f in before:
+        f()
     for target, path in symlinks:
         # check that symlink path does not exists
         if exists(path):
@@ -37,7 +57,8 @@ def bootstrap():
         command = ['ln', '-s', target, path]
         print ' '.join(command)
         check_call(command)
-    # TODO: bootstrap vim (plugins as submodules, install Commant-T)
+    for f in after:
+        f()
 
 if __name__ == "__main__":
     bootstrap()
