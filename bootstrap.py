@@ -25,9 +25,14 @@ symlinks = [
     ('gtkrc-2.0', '.gtkrc-2.0'),
     ('gtkrc.mine', '.gtkrc.mine'),
 
+    ('bin', 'bin'),
     ('inputrc', '.inputrc'),
     ('gitconfig', '.gitconfig'),
     ('terminator', '.config/terminator'),
+
+    # mc
+    ('.config/mc/ini', 'mc/ini'),
+    ('.config/mc/mc.ext', 'mc/mc.ext'),
 ]
 symlinks = [
     (normpath(join(dot_base, tp)), normpath(join(home, sp)))

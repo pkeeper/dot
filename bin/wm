@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# restore XFCE Window Manager if it doesn't loaded properly after boot
+
+xfwm4 --sm-client-id=`echo $SESSION_MANAGER | awk -F'/' '{ print $1 }'`
