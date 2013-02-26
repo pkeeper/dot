@@ -1,11 +1,11 @@
-INSTALLATION
+Installation
 ============
 
-  $ git clone ... ~/dot
-  $ cd ~/dot
-  $ python bootstrap.py
+    $ git clone ... ~/dot
+    $ cd ~/dot
+    $ python bootstrap.py
 
-ADDING NEW CONFIGS
+Adding new configs
 ==================
 
 * Copy config/folder into repo.
