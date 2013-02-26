@@ -16,6 +16,7 @@ symlinks = [
 
     ('inputrc', '.inputrc'),
     ('gitconfig', '.gitconfig'),
+    ('terminator', '.config/terminator'),
 ]
 symlinks = [
     (normpath(join(dot_base, tp)), normpath(join(home, sp)))
