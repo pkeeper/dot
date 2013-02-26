@@ -52,6 +52,8 @@ nmap <silent> <leader>0 :only<CR>
 nmap <silent> <leader>f :let @+ = expand("%")<CR>
 " paste from clipboard
 nmap <silent> <leader>p "+p
+nmap <silent> <leader>P "+P
+vmap <silent> <leader>p "+p
 " yank to clipboard
 vmap <silent> <leader>y "+y
 nmap <silent> <leader>y "+y
