@@ -2,6 +2,7 @@
 import os
 from os.path import join, normpath, exists
 from datetime import datetime
+from time import mktime
 from subprocess import check_call
 
 home = os.path.expanduser('~')
@@ -18,7 +19,8 @@ symlinks = [
     ('zsh/jetprose.zsh-theme', '.oh-my-zsh/themes/jetprose.zsh-theme'),
 
     # virtualenv
-    ('.virtualenvs/postactivate', 'virtualenv/postactivate'),
+    # FIXME: 'ln -s' by hand for now
+    # ('virtualenv/postactivate', '.virtualenvs/postactivate'),
 
     # awesome wm
     ('awesome', '.config/awesome'),
@@ -31,8 +33,8 @@ symlinks = [
     ('terminator', '.config/terminator'),
 
     # mc
-    ('.config/mc/ini', 'mc/ini'),
-    ('.config/mc/mc.ext', 'mc/mc.ext'),
+    ('mc/ini', '.config/mc/ini'),
+    ('mc/mc.ext', '.config/mc/mc.ext'),
 ]
 symlinks = [
     (normpath(join(dot_base, tp)), normpath(join(home, sp)))
@@ -69,7 +71,7 @@ def bootstrap():
         # check that symlink path does not exists
         if exists(path):
             print path, 'exists, backing up'
-            suffix = '.backup-%s' % datetime.now().strftime('%Y%m%d')
+            suffix = '.backup-%d' % mktime(datetime.utcnow().utctimetuple())
             run(['mv', path, path + suffix])
 
         run(['ln', '-s', target, path])
