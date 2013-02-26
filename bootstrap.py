@@ -26,6 +26,7 @@ symlinks = [
     ('awesome', '.config/awesome'),
     ('gtkrc-2.0', '.gtkrc-2.0'),
     ('gtkrc.mine', '.gtkrc.mine'),
+    ('gtk-3.0', '.config/.gtk-3.0'),
 
     ('bin', 'bin'),
     ('inputrc', '.inputrc'),
