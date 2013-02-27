@@ -77,7 +77,7 @@ tags = {
   names = {"web", "code", "im", "fm", 5, 6, 7, 8, "music"},
   layout = {
     layouts[1],
-    layouts[2],
+    layouts[4],
     layouts[2],
     layouts[10],
     layouts[1],
