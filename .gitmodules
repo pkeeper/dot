@@ -34,3 +34,6 @@
 [submodule "awesome/themes"]
 	path = awesome/themes
 	url = git://github.com/mikar/awesome-themes.git
+[submodule "vim/bundle/jshint"]
+	path = vim/bundle/jshint
+	url = git://github.com/walm/jshint.vim.git
