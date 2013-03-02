@@ -119,13 +119,14 @@ function run_once(prg)
     if not prg then
         do return nil end
     end
-    awful.util.spawn_with_shell("x=" .. prg .. "; pgrep -u $USERNAME -x " .. prg .. " || (" .. prg .. ")")
+    awful.util.spawn_with_shell("x='" .. prg .. "'; pgrep -u $USERNAME -x -f '" .. prg .. "' || (" .. prg .. ")")
 end
 
 awful.util.spawn("xset r rate 250")
 awful.util.spawn("setxkbmap -layout 'us,ru,ua' -variant ',winkeys,winkeys' -option grp:caps_toggle -option grp_led:caps -option terminate:ctrl_alt_bksp")
 run_once("kbdd")
 awful.util.spawn("dropbox start")
+run_once("xflux -l 50.27 -g 30.31")
 
 
 -- Keyboard map indicator and changer
