@@ -127,6 +127,7 @@ awful.util.spawn("setxkbmap -layout 'us,ru,ua' -variant ',winkeys,winkeys' -opti
 run_once("kbdd")
 awful.util.spawn("dropbox start")
 run_once("xflux -l 50.27 -g 30.31")
+run_once("nm-applet")
 
 
 -- Keyboard map indicator and changer
