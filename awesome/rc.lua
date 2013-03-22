@@ -74,13 +74,13 @@ layouts =
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-  names = {"web", "code", "im", "fm", 5, 6, 7, 8, "music"},
+  names = {"web", "code", "im", "fm", "skype", 6, 7, 8, "music"},
   layout = {
     layouts[1],
     layouts[4],
     layouts[2],
     layouts[10],
-    layouts[1],
+    layouts[2],
     layouts[1],
     layouts[1],
     layouts[1],
@@ -92,6 +92,8 @@ for s = 1, screen.count() do
     tags[s] = awful.tag(tags.names, s, tags.layout)
     awful.tag.setncol(2, tags[s][3])
     awful.tag.setproperty(tags[s][3], "mwfact", 0.8)
+    awful.tag.setncol(2, tags[s][5])
+    awful.tag.setproperty(tags[s][5], "mwfact", 0.8)
 end
 -- }}}
 
@@ -411,6 +413,10 @@ awful.rules.rules = {
     -- FM
     { rule = { class = "Terminator", name = "File Manager" },
       properties = { tag = tags[1][4] } },
+
+    -- Skype
+    { rule = { class = "Skype" },
+      properties = { tag = tags[1][5] } },
 
     { rule = { class = "Gvim", },
       properties = { floating = true } },
