@@ -36,7 +36,8 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init(awful.util.getdir("config") .. "/themes/strict/theme.lua")
+-- beautiful.init(awful.util.getdir("config") .. "/themes/strict/theme.lua")
+beautiful.init(awful.util.getdir("config") .. "/themes/smoked/theme.lua")
 -- white themes: snow, smoked, strict
 
 -- This is used later as the default terminal and editor to run.
