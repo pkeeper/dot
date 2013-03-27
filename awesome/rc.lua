@@ -405,6 +405,8 @@ awful.rules.rules = {
     -- Browser
     { rule = { class = "Chromium-browser" },
       properties = { tag = tags[1][1] } },
+    { rule = { class = "Google-chrome" },
+      properties = { tag = tags[1][1] } },
 
     -- IM
     { rule = { class = "Gajim", role="roster" },
