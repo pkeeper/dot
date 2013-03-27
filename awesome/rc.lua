@@ -125,28 +125,29 @@ function run_once(prg)
     awful.util.spawn_with_shell("x='" .. prg .. "'; pgrep -u $USERNAME -x -f '" .. prg .. "' || (" .. prg .. ")")
 end
 
-awful.util.spawn("xset r rate 250")
-awful.util.spawn("setxkbmap -layout 'us,ru,ua' -variant ',winkeys,winkeys' -option grp:caps_toggle -option grp_led:caps -option terminate:ctrl_alt_bksp")
-run_once("kbdd")
-awful.util.spawn("dropbox start")
+--awful.util.spawn("xset r rate 250")
+--awful.util.spawn("setxkbmap -layout 'us,ru,ua' -variant ',winkeys,winkeys' -option grp:caps_toggle -option grp_led:caps -option terminate:ctrl_alt_bksp")
+--run_once("kbdd")
+--awful.util.spawn("dropbox start")
+--run_once("nm-applet")
 run_once("xflux -l 50.27 -g 30.31")
-run_once("nm-applet")
+run_once("gnome-session --session=ubuntu")
 
 
 -- Keyboard map indicator and changer
-kbdwidget = widget({type = "textbox", name = "kbdwidget"})
-kbdwidget.border_color = beautiful.fg_normal
-kbdwidget.text = " Eng "
+--kbdwidget = widget({type = "textbox", name = "kbdwidget"})
+--kbdwidget.border_color = beautiful.fg_normal
+--kbdwidget.text = " Eng "
 
-dbus.request_name("session", "ru.gentoo.kbdd") 
-dbus.add_match("session", "interface='ru.gentoo.kbdd',member='layoutChanged'") 
-dbus.add_signal("ru.gentoo.kbdd", function(...) 
-    local data = {...} 
-    local layout = data[2] 
-    lts = {[0] = "Eng", [1] = "Rus", [2] = "Ukr"} 
-    kbdwidget.text = " "..lts[layout].." " 
-    end 
-) 
+--dbus.request_name("session", "ru.gentoo.kbdd") 
+--dbus.add_match("session", "interface='ru.gentoo.kbdd',member='layoutChanged'") 
+--dbus.add_signal("ru.gentoo.kbdd", function(...) 
+    --local data = {...} 
+    --local layout = data[2] 
+    --lts = {[0] = "Eng", [1] = "Rus", [2] = "Ukr"} 
+    --kbdwidget.text = " "..lts[layout].." " 
+    --end 
+--) 
 
 -- {{{ Wibox
 -- Create a textclock widget
