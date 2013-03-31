@@ -134,6 +134,8 @@ let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
 " let commant-t plugin proceed more files in one directory
 let g:CommandTMaxFiles=40000
 
+let g:vimclojure#ParenRainbow = 1
+
 "set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
