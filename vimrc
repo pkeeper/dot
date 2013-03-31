@@ -164,5 +164,7 @@ if has('gui_running')
   set guioptions-=r
   set guioptions-=b
 
-  set guifont=Terminus\ 13
+  " set guifont=Terminus\ 13
+  " set guifont=Inconsolata\ 12
+  set guifont=Droid\ Sans\ Mono\ 12
 endif
