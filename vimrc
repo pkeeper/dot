@@ -3,6 +3,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 filetype plugin indent on
 
+colorscheme ir_black
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
