@@ -23,8 +23,8 @@ set backspace=indent,eol,start
 set wildignore=*.pyc,.git,*.class,*~
 set gdefault  " default /g in regexps
 set hidden
-set relativenumber
-set undofile
+"set relativenumber
+"set undofile
 
 
 " LEADER MAPPINGS
@@ -131,7 +131,7 @@ endif
 
 let NERDTreeIgnore = ['\.pyc$']
 let g:pyflakes_use_quickfix = 0
-let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
+let g:ackprg=" ack -H --nocolor --nogroup --column"
 " let commant-t plugin proceed more files in one directory
 let g:CommandTMaxFiles=40000
 
