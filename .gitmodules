@@ -25,9 +25,6 @@
 [submodule "vim/bundle/repeat"]
 	path = vim/bundle/repeat
 	url = git://github.com/tpope/vim-repeat.git
-[submodule "vim/bundle/clojure"]
-	path = vim/bundle/clojure
-	url = https://github.com/vim-scripts/VimClojure
 [submodule "awesome/themes"]
 	path = awesome/themes
 	url = git://github.com/mikar/awesome-themes.git
