@@ -31,6 +31,7 @@ set undofile
 
 let mapleader = ","
 let g:pep8_map = '<leader>8'
+let g:ctrlp_match_window_reversed = 0
 map <silent> <leader>td <Plug>TaskList
 map <silent> <leader>u :GundoToggle<CR>
 map <silent> <leader>n :NERDTreeToggle<CR>
