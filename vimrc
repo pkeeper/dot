@@ -120,6 +120,7 @@ if has("autocmd")
   au BufRead,BufNewFile *.js set ft=javascript syntax=jquery
   au BufRead,BufNewFile *.html set ft=htmldjango
   au BufRead,BufNewFile *.md set ft=markdown
+  au BufRead,BufNewFile *.cljs set filetype=clojure
   " remove all trailing whitespace on file save
   autocmd BufWritePre *.py,*.html,*.less,*.js,*.sml,*.clj :%s/\s\+$//e
   " autoreload vim configuration on save
