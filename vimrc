@@ -69,8 +69,8 @@ nmap <leader>ts :%s/\s\+$//e<CR>:noh<CR>
 "nmap <C-S-Tab> :bp!<CR>
 "imap <C-Tab> <Esc>:bn!<CR>
 "imap <C-S-Tab> <Esc>:bp!<CR>
-nmap <F2> :ls<CR>:b<Space>
-nmap <silent> <F3> :BufExplorerHorizontalSplit<CR>
+nmap <F2> :CtrlPBuffer<CR>
+nmap <F3> :ls<CR>:b<Space>
 
 
 " SPLIT WINDOWS
