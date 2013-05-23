@@ -155,7 +155,7 @@ inoremap <F11> :call ToggleFullscreen()<CR>
 if has('gui_running')
   colorscheme molokai
   set columns=101
-  set lines=45
+  set lines=40
 
   " turn off menu
   set guioptions-=m
