@@ -23,19 +23,19 @@ symlinks = [
     # ('virtualenv/postactivate', '.virtualenvs/postactivate'),
 
     # awesome wm
-    ('awesome', '.config/awesome'),
-    ('gtkrc-2.0', '.gtkrc-2.0'),
+    #('awesome', '.config/awesome'),
+    #('gtkrc-2.0', '.gtkrc-2.0'),
     ('gtkrc.mine', '.gtkrc.mine'),
-    ('gtk-3.0', '.config/.gtk-3.0'),
+    #('gtk-3.0', '.config/.gtk-3.0'),
 
-    ('bin', 'bin'),
-    ('inputrc', '.inputrc'),
+    #('bin', 'bin'),
+    #('inputrc', '.inputrc'),
     ('gitconfig', '.gitconfig'),
-    ('terminator', '.config/terminator'),
+    #('terminator', '.config/terminator'),
 
     # mc
-    ('mc/ini', '.config/mc/ini'),
-    ('mc/mc.ext', '.config/mc/mc.ext'),
+    #('mc/ini', '.config/mc/ini'),
+    #('mc/mc.ext', '.config/mc/mc.ext'),
 ]
 symlinks = [
     (normpath(join(dot_base, tp)), normpath(join(home, sp)))
