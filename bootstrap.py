@@ -14,6 +14,10 @@ symlinks = [
     ('vim', '.vim'),
     ('vimrc', '.vimrc'),
 
+    # emacs
+    ('emacs', '.emacs'),
+    ('emacs.d', '.emacs.d'),
+
     # zsh
     ('zsh/zshrc', '.zshrc'),
     ('zsh/jetprose.zsh-theme', '.oh-my-zsh/themes/jetprose.zsh-theme'),
