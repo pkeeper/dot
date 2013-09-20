@@ -18,6 +18,9 @@ symlinks = [
     ('emacs', '.emacs'),
     ('emacs.d', '.emacs.d'),
 
+    # Sublime Text 3
+    ('sublime-text-3', '.config/sublime-text-3'),
+
     # zsh
     ('zsh/zshrc', '.zshrc'),
     ('zsh/jetprose.zsh-theme', '.oh-my-zsh/themes/jetprose.zsh-theme'),
