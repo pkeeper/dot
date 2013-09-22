@@ -4,7 +4,8 @@
                       starter-kit-eshell
                       clojure-mode
                       clojure-test-mode
-                      nrepl))
+                      nrepl
+                      markdown-mode))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
