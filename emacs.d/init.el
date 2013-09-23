@@ -5,7 +5,9 @@
                       clojure-mode
                       clojure-test-mode
                       nrepl
-                      markdown-mode))
+                      markdown-mode
+                      erlang
+                      python-mode))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
