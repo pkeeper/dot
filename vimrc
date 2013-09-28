@@ -18,13 +18,15 @@ set incsearch		" прокручивать к найденому в процес�
 set hlsearch		" подсветка искомого выражения
 set showmatch
 set linebreak		" перенос строк по словам, а не по буквам
-set wildmenu        
+set wildmenu
 set backspace=indent,eol,start
 set wildignore=*.pyc,.git,*.class,*~,#*#
 set gdefault  " default /g in regexps
 set hidden
 set relativenumber
 set undofile
+
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz,№#
 
 
 " LEADER MAPPINGS
