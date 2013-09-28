@@ -15,11 +15,12 @@ symlinks = [
     ('vimrc', '.vimrc'),
 
     # emacs
-    ('emacs', '.emacs'),
-    ('emacs.d', '.emacs.d'),
+    ('.emacs', '.emacs'),
+    ('emacs.d/init.el', '.emacs.d/init.el'),
 
     # Sublime Text 3
-    ('sublime-text-3', '.config/sublime-text-3'),
+    ('sublime-text-3/Preferences.sublime-settings',
+     '.config/sublime-text-3/Packages/User/Preferences.sublime-settings'),
 
     # zsh
     ('zsh/zshrc', '.zshrc'),

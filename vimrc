@@ -20,7 +20,7 @@ set showmatch
 set linebreak		" перенос строк по словам, а не по буквам
 set wildmenu        
 set backspace=indent,eol,start
-set wildignore=*.pyc,.git,*.class,*~
+set wildignore=*.pyc,.git,*.class,*~,#*#
 set gdefault  " default /g in regexps
 set hidden
 set relativenumber
