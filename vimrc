@@ -109,6 +109,8 @@ vmap < <gv
 :ca Q q
 :ca Q q
 :ca E e
+:ca Qa qa
+:ca QA qa
 
 
 " FILETYPE RELATED
@@ -136,8 +138,6 @@ let g:pyflakes_use_quickfix = 0
 let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
 " let commant-t plugin proceed more files in one directory
 let g:CommandTMaxFiles=40000
-
-let g:vimclojure#ParenRainbow = 1
 
 "set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
