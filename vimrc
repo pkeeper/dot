@@ -128,6 +128,10 @@ if has("autocmd")
   " autoreload vim configuration on save
   autocmd BufWritePost .vimrc source $MYVIMRC
   autocmd BufWritePost .gvimrc source $MYGVIMRC
+
+  " fix html indentation
+  " see http://www.morearty.com/blog/2013/01/22/fixing-vims-indenting-of-html-files/
+  autocmd FileType html setlocal indentkeys-=*<Return>
 endif
 
 
