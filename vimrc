@@ -65,6 +65,7 @@ nmap <silent> <leader>y "+y
 " remove trailing spaces
 nmap <leader>ts :%s/\s\+$//e<CR>:noh<CR>
 
+
 " BUFFERS
 
 "nmap <C-Tab> :bn!<CR>
@@ -146,6 +147,9 @@ let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
 let g:CommandTMaxFiles=40000
 
 let g:paredit_smartjump = 1
+
+let g:yankring_replace_n_pkey = '<C-u>'
+
 
 "set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
