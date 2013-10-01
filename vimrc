@@ -147,6 +147,7 @@ let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
 let g:CommandTMaxFiles=40000
 
 let g:paredit_smartjump = 1
+let g:paredit_mode = 0
 
 let g:yankring_replace_n_pkey = '<C-u>'
 
