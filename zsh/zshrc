@@ -16,6 +16,9 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export EDITOR=vim
 
+export GOPATH=$HOME/p/go
+export PATH=$PATH:$GOPATH/bin
+
 # aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
