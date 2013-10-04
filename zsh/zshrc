@@ -16,6 +16,9 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export EDITOR=vim
 
+export GOPATH=$HOME/p/go
+export PATH=$PATH:$GOPATH/bin
+
 # aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
@@ -37,3 +40,9 @@ autoload -U zmv
 export AUTOJUMP_KEEP_SYMLINKS=1
 # needed for zsh autojump completion
 autoload -U compinit; compinit
+
+# pythonbrew
+# [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
