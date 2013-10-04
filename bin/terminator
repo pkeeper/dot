@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/bin/terminator --geometry=900x530+150+100

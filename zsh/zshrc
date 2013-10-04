@@ -16,6 +16,9 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export EDITOR=vim
 
+export GOPATH=$HOME/p/go
+export PATH=$PATH:$GOPATH/bin
+
 # aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
@@ -38,5 +41,9 @@ export AUTOJUMP_KEEP_SYMLINKS=1
 # needed for zsh autojump completion
 autoload -U compinit; compinit
 
-source /var/local/env-allura/bin/activate
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+
+source /var/local/allura
 cd /var/local/allura

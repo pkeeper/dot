@@ -18,13 +18,15 @@ set incsearch		" прокручивать к найденому в процес�
 set hlsearch		" подсветка искомого выражения
 set showmatch
 set linebreak		" перенос строк по словам, а не по буквам
-set wildmenu        
+set wildmenu
 set backspace=indent,eol,start
-set wildignore=*.pyc,.git,*.class,*~
+set wildignore=*.pyc,.git,*.class,*~,#*#
 set gdefault  " default /g in regexps
 set hidden
 "set relativenumber
 "set undofile
+
+"set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz,№#
 
 
 " LEADER MAPPINGS
@@ -63,14 +65,15 @@ nmap <silent> <leader>y "+y
 " remove trailing spaces
 nmap <leader>ts :%s/\s\+$//e<CR>:noh<CR>
 
+
 " BUFFERS
 
 "nmap <C-Tab> :bn!<CR>
 "nmap <C-S-Tab> :bp!<CR>
 "imap <C-Tab> <Esc>:bn!<CR>
 "imap <C-S-Tab> <Esc>:bp!<CR>
-nmap <F2> :ls<CR>:b<Space>
-nmap <silent> <F3> :BufExplorerHorizontalSplit<CR>
+nmap <F2> :CtrlPBuffer<CR>
+nmap <F3> :ls<CR>:b<Space>
 
 
 " SPLIT WINDOWS
@@ -109,6 +112,8 @@ vmap < <gv
 :ca Q q
 :ca Q q
 :ca E e
+:ca Qa qa
+:ca QA qa
 
 
 " FILETYPE RELATED
@@ -120,11 +125,16 @@ if has("autocmd")
   au BufRead,BufNewFile *.js set ft=javascript syntax=jquery
   au BufRead,BufNewFile *.html set ft=htmldjango
   au BufRead,BufNewFile *.md set ft=markdown
+  au BufRead,BufNewFile *.cljs set filetype=clojure
   " remove all trailing whitespace on file save
   autocmd BufWritePre *.py,*.html,*.less,*.js,*.sml,*.clj :%s/\s\+$//e
   " autoreload vim configuration on save
   autocmd BufWritePost .vimrc source $MYVIMRC
   autocmd BufWritePost .gvimrc source $MYGVIMRC
+
+  " fix html indentation
+  " see http://www.morearty.com/blog/2013/01/22/fixing-vims-indenting-of-html-files/
+  autocmd FileType html setlocal indentkeys-=*<Return>
 endif
 
 
@@ -136,7 +146,11 @@ let g:ackprg=" ack -H --nocolor --nogroup --column"
 " let commant-t plugin proceed more files in one directory
 let g:CommandTMaxFiles=40000
 
-let g:vimclojure#ParenRainbow = 1
+let g:paredit_smartjump = 1
+let g:paredit_mode = 0
+
+let g:yankring_replace_n_pkey = '<C-\>'
+
 
 "set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
@@ -154,7 +168,7 @@ inoremap <F11> :call ToggleFullscreen()<CR>
 if has('gui_running')
   colorscheme molokai
   set columns=101
-  set lines=45
+  set lines=40
 
   " turn off menu
   set guioptions-=m
@@ -170,5 +184,6 @@ if has('gui_running')
 
   " set guifont=Terminus\ 13
   " set guifont=Inconsolata\ 12
-  set guifont=Droid\ Sans\ Mono\ 12
+  " set guifont=Droid\ Sans\ Mono\ 12
+  set guifont=Ubuntu\ Mono\ 14
 endif
