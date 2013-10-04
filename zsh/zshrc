@@ -37,3 +37,6 @@ autoload -U zmv
 export AUTOJUMP_KEEP_SYMLINKS=1
 # needed for zsh autojump completion
 autoload -U compinit; compinit
+
+source /var/local/env-allura/bin/activate
+cd /var/local/allura
