@@ -13,7 +13,7 @@ set autoindent
 set smartindent		" умный автоотступ
 set ignorecase		" игнорировать регистр при поиске
 syntax on
-set number
+" set number
 set incsearch		" прокручивать к найденому в процесе набора поискового запроса
 set hlsearch		" подсветка искомого выражения
 set showmatch
@@ -23,7 +23,7 @@ set backspace=indent,eol,start
 set wildignore=*.pyc,.git,*.class,*~,#*#
 set gdefault  " default /g in regexps
 set hidden
-set relativenumber
+" set relativenumber
 set undofile
 
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz,№#
@@ -166,7 +166,8 @@ nnoremap <F11> :call ToggleFullscreen()<CR>
 inoremap <F11> :call ToggleFullscreen()<CR>
 
 if has('gui_running')
-  colorscheme molokai
+  " colorscheme molokai
+  colorscheme codeschool
   set columns=101
   set lines=40
 
