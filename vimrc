@@ -141,6 +141,7 @@ endif
 " PLUGINS
 
 let NERDTreeIgnore = ['\.pyc$']
+let g:NERDTreeWinPos = "right"
 let g:pyflakes_use_quickfix = 0
 let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
 
