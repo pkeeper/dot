@@ -143,8 +143,6 @@ endif
 let NERDTreeIgnore = ['\.pyc$']
 let g:pyflakes_use_quickfix = 0
 let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
-" let commant-t plugin proceed more files in one directory
-let g:CommandTMaxFiles=40000
 
 let g:paredit_smartjump = 1
 let g:paredit_mode = 0
