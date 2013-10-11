@@ -45,5 +45,5 @@ autoload -U compinit; compinit
 export PATH="/usr/local/heroku/bin:$PATH"
 
 
-source /var/local/allura
+source /var/local/env-allura/bin/activate
 cd /var/local/allura

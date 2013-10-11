@@ -13,7 +13,7 @@ set autoindent
 set smartindent		" умный автоотступ
 set ignorecase		" игнорировать регистр при поиске
 syntax on
-set number
+" set number
 set incsearch		" прокручивать к найденому в процесе набора поискового запроса
 set hlsearch		" подсветка искомого выражения
 set showmatch
@@ -141,10 +141,9 @@ endif
 " PLUGINS
 
 let NERDTreeIgnore = ['\.pyc$']
+let g:NERDTreeWinPos = "right"
 let g:pyflakes_use_quickfix = 0
-let g:ackprg=" ack -H --nocolor --nogroup --column"
-" let commant-t plugin proceed more files in one directory
-let g:CommandTMaxFiles=40000
+let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
 
 let g:paredit_smartjump = 1
 let g:paredit_mode = 0
@@ -166,7 +165,8 @@ nnoremap <F11> :call ToggleFullscreen()<CR>
 inoremap <F11> :call ToggleFullscreen()<CR>
 
 if has('gui_running')
-  colorscheme molokai
+  " colorscheme molokai
+  colorscheme codeschool
   set columns=101
   set lines=40
 
