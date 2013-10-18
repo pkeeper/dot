@@ -12,7 +12,7 @@ set nocompatible
 set autoindent
 set smartindent		" умный автоотступ
 set ignorecase		" игнорировать регистр при поиске
-syntax on
+syntax off
 " set number
 set incsearch		" прокручивать к найденому в процесе набора поискового запроса
 set hlsearch		" подсветка искомого выражения
