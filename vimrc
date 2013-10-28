@@ -146,7 +146,7 @@ let g:pyflakes_use_quickfix = 0
 let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
 
 let g:paredit_smartjump = 1
-let g:paredit_mode = 0
+let g:paredit_mode = 1
 
 let g:yankring_replace_n_pkey = '<C-\>'
 
