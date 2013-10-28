@@ -26,6 +26,9 @@ alias o="xdg-open"
 
 alias git="nocorrect git"
 alias sudo="nocorrect sudo"
+alias workon="nocorrect workon"
+alias g="git"
+alias w="workon"
 
 alias t="python ~/tasks/t/t.py --task-dir ~/tasks --list tasks"
 
