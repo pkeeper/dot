@@ -12,7 +12,7 @@ set nocompatible
 set autoindent
 set smartindent		" умный автоотступ
 set ignorecase		" игнорировать регистр при поиске
-syntax on
+syntax off
 " set number
 set incsearch		" прокручивать к найденому в процесе набора поискового запроса
 set hlsearch		" подсветка искомого выражения
@@ -146,7 +146,7 @@ let g:pyflakes_use_quickfix = 0
 let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
 
 let g:paredit_smartjump = 1
-let g:paredit_mode = 0
+let g:paredit_mode = 1
 
 let g:yankring_replace_n_pkey = '<C-\>'
 
