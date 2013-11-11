@@ -168,7 +168,7 @@ if has('gui_running')
   " colorscheme molokai
   colorscheme codeschool
   set columns=101
-  set lines=40
+  set lines=30
 
   " turn off menu
   set guioptions-=m
@@ -186,4 +186,5 @@ if has('gui_running')
   " set guifont=Inconsolata\ 12
   " set guifont=Droid\ Sans\ Mono\ 12
   set guifont=Ubuntu\ Mono\ 14
+  set linespace=3
 endif
