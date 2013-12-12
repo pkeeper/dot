@@ -12,7 +12,7 @@ set nocompatible
 set autoindent
 set smartindent		" умный автоотступ
 set ignorecase		" игнорировать регистр при поиске
-syntax off
+syntax on
 " set number
 set incsearch		" прокручивать к найденому в процесе набора поискового запроса
 set hlsearch		" подсветка искомого выражения
@@ -166,7 +166,8 @@ inoremap <F11> :call ToggleFullscreen()<CR>
 
 if has('gui_running')
   " colorscheme molokai
-  colorscheme codeschool
+  " colorscheme codeschool
+  colorscheme min
   set columns=101
   set lines=30
 
