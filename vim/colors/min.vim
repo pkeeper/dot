@@ -19,13 +19,13 @@ hi CursorColumn ctermfg=NONE ctermbg=23 cterm=NONE guifg=NONE guibg=#2e373b gui=
 hi ColorColumn ctermfg=NONE ctermbg=23 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
 hi LineNr ctermfg=102 ctermbg=23 cterm=NONE guifg=#84898c guibg=#2a343a gui=NONE
 hi VertSplit ctermfg=59 ctermbg=59 cterm=NONE guifg=#252c31 guibg=#252c31 gui=NONE
-hi MatchParen ctermfg=180 ctermbg=NONE cterm=underline guifg=#dda790 guibg=NONE gui=underline
+hi MatchParen ctermfg=180 ctermbg=NONE cterm=NONE guifg=#dda790 guibg=NONE gui=NONE
 hi StatusLine ctermfg=231 ctermbg=59 cterm=bold guifg=#f0f0f0 guibg=#575e61 gui=bold
 hi StatusLineNC ctermfg=231 ctermbg=59 cterm=NONE guifg=#f0f0f0 guibg=#575e61 gui=NONE
 hi Pmenu ctermfg=153 ctermbg=NONE cterm=NONE guifg=#bcdbff guibg=NONE gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3f4b52 gui=NONE
 hi IncSearch ctermfg=16 ctermbg=107 cterm=NONE guifg=#182227 guibg=#8bb664 gui=NONE
-hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+hi Search ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=inverse
 hi Directory ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3c98d9 guibg=NONE gui=NONE
 hi Folded ctermfg=247 ctermbg=16 cterm=NONE guifg=#9a9a9a guibg=#182227 gui=NONE
 
@@ -60,7 +60,7 @@ hi StorageClass ctermfg=113 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NO
 hi String ctermfg=107 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Tag ctermfg=153 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=NONE guibg=NONE gui=bold
-hi Todo ctermfg=247 ctermbg=NONE cterm=inverse,bold guifg=NONE guibg=NONE gui=inverse,bold,italic
+hi Todo ctermfg=247 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Type ctermfg=153 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
 hi rubyClass ctermfg=180 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
