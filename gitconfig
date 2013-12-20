@@ -33,3 +33,5 @@
 # when checking out a new branch, always track it so you can pull again later
 [branch]
   autosetupmerge = true
+[core]
+	excludesfile = /home/jetmind/.gitignore_global

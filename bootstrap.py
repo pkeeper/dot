@@ -10,6 +10,8 @@ dot_base = os.getcwd()
 
 # (target, symlink)
 symlinks = [
+    ('gitignore_global', '.gitignore_global'),
+
     # vim
     ('vim', '.vim'),
     ('vimrc', '.vimrc'),

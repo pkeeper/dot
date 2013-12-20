@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/jetmind/p/42cc/zbroya/xcomments/jobs/daily'
 let g:netrw_dirhist_2='/home/jetmind/p/42cc/allura/sourceforge-allura/ForgeImporters/forgeimporters/trac'
 let g:netrw_dirhist_3='/home/jetmind/p/jc/app'
+let g:netrw_dirhist_4='/home/jetmind/tmp/golabs-class'
