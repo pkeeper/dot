@@ -31,7 +31,11 @@ hi Folded ctermfg=247 ctermbg=16 cterm=NONE guifg=#9a9a9a guibg=#182227 gui=NONE
 
 hi Normal ctermfg=231 ctermbg=16 cterm=NONE guifg=#f0f0f0 guibg=#252c31 gui=NONE
 hi Comment ctermfg=247 ctermbg=NONE cterm=NONE guifg=#7a7a7a guibg=NONE gui=NONE
+hi String ctermfg=107 ctermbg=NONE cterm=NONE guifg=#bcdbff guibg=NONE gui=NONE
+hi Keyword ctermfg=180 ctermbg=NONE cterm=NONE guifg=#dda790 guibg=NONE gui=NONE
+
 hi erubyComment ctermfg=247 ctermbg=NONE cterm=NONE guifg=#7a7a7a guibg=NONE gui=NONE
+hi rubyStringDelimiter ctermfg=107 ctermbg=NONE cterm=NONE guifg=#8bb664 guibg=NONE gui=NONE
 
 hi Boolean ctermfg=68 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Character ctermfg=68 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -47,7 +51,6 @@ hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NON
 hi Float ctermfg=68 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Function ctermfg=153 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Identifier ctermfg=113 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Keyword ctermfg=180 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Label ctermfg=107 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi NonText ctermfg=59 ctermbg=17 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Number ctermfg=68 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -57,7 +60,6 @@ hi Special ctermfg=231 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi SpecialKey ctermfg=59 ctermbg=23 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Statement ctermfg=180 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi StorageClass ctermfg=113 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi String ctermfg=107 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Tag ctermfg=153 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=NONE guibg=NONE gui=bold
 hi Todo ctermfg=247 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -68,7 +70,6 @@ hi rubyFunction ctermfg=153 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NO
 hi rubyInterpolationDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi rubySymbol ctermfg=68 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi rubyConstant ctermfg=146 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi rubyStringDelimiter ctermfg=107 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi rubyBlockParameter ctermfg=74 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi rubyInstanceVariable ctermfg=74 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi rubyInclude ctermfg=180 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
