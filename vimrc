@@ -20,7 +20,7 @@ set showmatch
 set linebreak		" перенос строк по словам, а не по буквам
 set wildmenu
 set backspace=indent,eol,start
-set wildignore=*.pyc,.git,*.class,*~,#*#
+set wildignore=*.pyc,.git,*.class,*~,#*#,*.egg-info
 set gdefault  " default /g in regexps
 set hidden
 " set relativenumber
@@ -64,6 +64,8 @@ nmap <silent> <leader>y "+y
 
 " remove trailing spaces
 nmap <leader>ts :%s/\s\+$//e<CR>:noh<CR>
+
+nmap <Space> <C-D>
 
 
 " BUFFERS
@@ -127,7 +129,7 @@ if has("autocmd")
   au BufRead,BufNewFile *.md set ft=markdown
   au BufRead,BufNewFile *.cljs set filetype=clojure
   " remove all trailing whitespace on file save
-  autocmd BufWritePre *.py,*.html,*.less,*.js,*.sml,*.clj :%s/\s\+$//e
+  " autocmd BufWritePre *.py,*.html,*.less,*.js,*.sml,*.clj :%s/\s\+$//e
   " autoreload vim configuration on save
   autocmd BufWritePost .vimrc source $MYVIMRC
   autocmd BufWritePost .gvimrc source $MYGVIMRC
