@@ -17,7 +17,8 @@
   df = diff
   dfc = diff --cached
   l = log --decorate --stat --graph
-  l1 = log --pretty=oneline
+  ll = log --decorate --stat --graph --patch
+  l1 = log --pretty=oneline --decorate --graph
   pushm = push origin master
 
 # only push your current branch
