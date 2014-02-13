@@ -185,6 +185,9 @@ if has('gui_running')
   set guioptions-=l
   set guioptions-=r
   set guioptions-=b
+  
+  " turn off cursor blinking
+  set guicursor+=a:blinkon0
 
   " set guifont=Terminus\ 13
   " set guifont=Inconsolata\ 12
