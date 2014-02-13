@@ -171,8 +171,8 @@ if has('gui_running')
   " colorscheme molokai
   " colorscheme codeschool
   colorscheme min
-  set columns=101
-  set lines=30
+  set columns=95
+  set lines=25
 
   " turn off menu
   set guioptions-=m
