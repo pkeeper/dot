@@ -13,6 +13,7 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME=/home/jetmind/tools/android-sdk-linux
 export PATH=/home/jetmind/sml/bin:/home/jetmind/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/gears/mozart2-2.0.0-alpha.0+build.3777.62f3ec5-x86_64-linux/bin  # Oz
 
 export EDITOR=vim
 
