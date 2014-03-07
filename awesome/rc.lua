@@ -126,7 +126,7 @@ function run_once(prg)
 end
 
 --awful.util.spawn("xset r rate 250")
---awful.util.spawn("setxkbmap -layout 'us,ru,ua' -variant ',winkeys,winkeys' -option grp:caps_toggle -option grp_led:caps -option terminate:ctrl_alt_bksp")
+awful.util.spawn("setxkbmap -layout 'us,ru,ua' -variant ',winkeys,winkeys' -option grp:caps_toggle -option grp_led:caps -option terminate:ctrl_alt_bksp -option:switchcaps")
 --run_once("kbdd")
 --awful.util.spawn("dropbox start")
 --run_once("nm-applet")
