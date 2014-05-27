@@ -1,6 +1,34 @@
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarick/Vundle.vim'
+
+" General
+Plugin 'mileszs/ack.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-scripts/YankRing.vim'
+" for snipmate (run :BundleInstall)
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+
+" python
+Plugin 'nvie/vim-flake8'
+
+" html
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" clojure
+Plugin 'vim-scripts/paredit.vim'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+
+call vundle#end()
 filetype plugin indent on
 
 colorscheme ir_black

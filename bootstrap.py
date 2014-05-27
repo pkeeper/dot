@@ -73,7 +73,8 @@ def bootstrap_vim():
 # run this before making symlinks
 before = [install_zsh]
 # run this after making symlinks
-after = [bootstrap_vim]
+# after = [bootstrap_vim]
+after = []
 
 
 def bootstrap():
