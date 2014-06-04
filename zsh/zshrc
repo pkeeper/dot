@@ -32,6 +32,7 @@ alias workon="nocorrect workon"
 alias g="git"
 alias w="workon"
 alias g="ack-grep"
+alias n="nosetests --with-progressive"
 
 alias t="python ~/tasks/t/t.py --task-dir ~/tasks --list tasks"
 
