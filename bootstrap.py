@@ -17,12 +17,12 @@ symlinks = [
     ('vimrc', '.vimrc'),
 
     # emacs
-    ('.emacs', '.emacs'),
-    ('emacs.d/init.el', '.emacs.d/init.el'),
+#    ('.emacs', '.emacs'),
+#    ('emacs.d/init.el', '.emacs.d/init.el'),
 
     # Sublime Text 3
-    ('sublime-text-3/Preferences.sublime-settings',
-     '.config/sublime-text-3/Packages/User/Preferences.sublime-settings'),
+#    ('sublime-text-3/Preferences.sublime-settings',
+#     '.config/sublime-text-3/Packages/User/Preferences.sublime-settings'),
 
     # zsh
     ('zsh/zshrc', '.zshrc'),
@@ -33,20 +33,20 @@ symlinks = [
     # ('virtualenv/postactivate', '.virtualenvs/postactivate'),
 
     # awesome wm
-    ('awesome', '.config/awesome'),
-    ('gtkrc-2.0', '.gtkrc-2.0'),
-    ('gtkrc.mine', '.gtkrc.mine'),
-    ('gtk-3.0', '.config/.gtk-3.0'),
+#    ('awesome', '.config/awesome'),
+#    ('gtkrc-2.0', '.gtkrc-2.0'),
+#    ('gtkrc.mine', '.gtkrc.mine'),
+#    ('gtk-3.0', '.config/.gtk-3.0'),
 
     ('bin', 'bin'),
-    ('profiles.clj', '.lein/profiles.clj'),
+#    ('profiles.clj', '.lein/profiles.clj'),
     ('inputrc', '.inputrc'),
     ('gitconfig', '.gitconfig'),
-    ('terminator', '.config/terminator'),
+#    ('terminator', '.config/terminator'),
 
     # mc
-    ('mc/ini', '.config/mc/ini'),
-    ('mc/mc.ext', '.config/mc/mc.ext'),
+#    ('mc/ini', '.config/mc/ini'),
+#    ('mc/mc.ext', '.config/mc/mc.ext'),
 ]
 symlinks = [
     (normpath(join(dot_base, tp)), normpath(join(home, sp)))
