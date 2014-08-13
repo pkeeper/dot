@@ -6,7 +6,7 @@ ZSH_THEME="jetprose"
 DISABLE_AUTO_UPDATE="false"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git virtualenvwrapper python vagrant django)
+plugins=(git virtualenvwrapper python vagrant django git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
