@@ -3,7 +3,7 @@
 NAME=$1
 SB_PATH=$NAME:/var/local
 LOCAL_PATH=/mnt/$NAME
-OPTS="-o follow_symlinks,transform_symlinks"
+OPTS="-o follow_symlinks,transform_symlinks,idmap=user,uid=$(id -u),gid=$(id -g)"
 
 if [ "$2" = "-u" ]
 then
