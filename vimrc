@@ -28,6 +28,9 @@ Plugin 'vim-scripts/paredit.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 
+" rust
+Plugin 'wting/rust.vim'
+
 call vundle#end()
 filetype plugin indent on
 
