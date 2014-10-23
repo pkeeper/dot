@@ -1,0 +1,14 @@
+#!/bin/bash
+
+NAME=$1
+SB_PATH=$NAME:/var/local
+LOCAL_PATH=/mnt/$NAME
+OPTS="-o follow_symlinks,transform_symlinks"
+
+if [ "$2" = "-u" ]
+then
+    fusermount -u $NAME
+else
+    sshfs $OPTS $SB_PATH $LOCAL_PATH
+fi
+
