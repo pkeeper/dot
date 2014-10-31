@@ -7,7 +7,7 @@ OPTS="-o follow_symlinks,transform_symlinks,idmap=user,uid=$(id -u),gid=$(id -g)
 
 if [ "$2" = "-u" ]
 then
-    fusermount -u $NAME
+    fusermount -u $LOCAL_PATH
 else
     sshfs $OPTS $SB_PATH $LOCAL_PATH
 fi
