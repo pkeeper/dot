@@ -31,6 +31,9 @@ Plugin 'tpope/vim-fireplace'
 " rust
 Plugin 'wting/rust.vim'
 
+" themes
+Plugin 'altercation/vim-colors-solarized'
+
 call vundle#end()
 filetype plugin indent on
 
