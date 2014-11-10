@@ -227,6 +227,8 @@ if has('gui_running')
   " set guifont=Inconsolata\ 12
   " set guifont=Droid\ Sans\ Mono\ 12
   " set guifont=Ubuntu\ Mono\ 14
-  set guifont=Anonymous\ Pro\ 14
-  set linespace=7
+  " set guifont=Anonymous\ Pro\ 14
+  " set linespace=7
+  set guifont=Fira\ Mono\ 14
+  set linespace=0
 endif
