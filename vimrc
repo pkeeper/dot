@@ -54,7 +54,7 @@ set showmatch
 set linebreak		" перенос строк по словам, а не по буквам
 set wildmenu
 set backspace=indent,eol,start
-set wildignore=*.pyc,.git,*.class,*~,#*#,*.egg-info
+set wildignore=*.pyc,*.pyo,.git,*.class,*~,#*#,*.egg-info
 set gdefault  " default /g in regexps
 set hidden
 " set relativenumber
@@ -176,7 +176,7 @@ endif
 
 " PLUGINS
 
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 let g:NERDTreeWinPos = "right"
 let g:pyflakes_use_quickfix = 0
 let g:ackprg=" ack-grep -H --nocolor --nogroup --column"
