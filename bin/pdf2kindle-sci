@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo | k2pdfopt -dev kpw -mode 2col "$1"
