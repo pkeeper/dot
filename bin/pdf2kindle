@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo | k2pdfopt -dev kpw -bp -f2p 0 -odpi 300 "$1"
+echo | k2pdfopt -dev kpw -ac -as -bp -f2p 0 -odpi 300 -ppgs "$1"
+# for PaperWhite 2 use -dev kp2
